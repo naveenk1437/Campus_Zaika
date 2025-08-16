@@ -1,0 +1,7 @@
+.profilepic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ff9800; /* Orange-500 */
+    object-fit: cover;
+}

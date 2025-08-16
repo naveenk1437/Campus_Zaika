@@ -1,0 +1,53 @@
+.Add{
+    background-color: #ff9800;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+}
+.Add:hover {
+    background-color: #e68900;
+}
+.Pro{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.Omenu{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #160b02; /* Orange-600 */
+    margin-top: -250px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+.dip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.idiv{
+    background-color: #ece795;
+    width:250px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    margin: 10px;
+}
+.Chef{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 150px;
+    margin-right: 1060px  ;
+}
