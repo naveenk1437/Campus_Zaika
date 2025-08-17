@@ -52,6 +52,9 @@ const App = () => {
                   <Route path="/login" element={<Login />} />
                   <Route path="/signup" element={<Signup />} />
                   <Route path="/test" element={<TestFirestore />} />
+                  <Route path="/" element={<Login />} />
+                  <Route path="/signup" element={<Signup />} />
+                  <Route path="/menu" element={<Menu />} />
 
                   {/* Private Routes */}
                   <Route
