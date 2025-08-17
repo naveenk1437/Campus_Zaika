@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
 import { auth } from '../firebase';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [resetEmail, setResetEmail] = useState('');
+  const navigate = useNavigate(); // ✅ for redirection
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       alert('✅ Login successful!');
+      navigate('/menu'); // ✅ redirect to Menu page
     } catch (error) {
       alert('❌ Login failed: ' + error.message);
     }
